@@ -795,7 +795,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 420px) {
   .cont-pictures {
     height: 330px;
   }
