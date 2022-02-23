@@ -1,20 +1,180 @@
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .cont-main {
   background-color: rgba(252, 248, 255, 255);
-  margin: 30px;
+  width: 97%;
   height: auto;
+  margin-top: 20px;
+  border-radius: 10px 10px 0 0;
   display: flex;
-  border-radius: 10px;
-  width: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .cont-purple {
   background-color: rgba(30, 31, 37, 255);
-  width: 65%;
-  height: 650px;
+  width: 80%;
+  height: 600px;
   border-radius: 10px 0 150px 0;
-  color: white;
-  position: absolute;
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.text {
+  width: 60%;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 3%;
+  margin-left: 20%;
+  color: white;
+  z-index: 5;
+}
+
+.blog {
+  width: 80%;
+  height: 10%;
+  font-family: "Baloo Tammudu 2", cursive;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p,
+h2,
+h1 {
+  margin: 0;
+}
+
+.icon-blogger {
+  color: rgba(193, 131, 238, 255);
+}
+
+.icon-eq {
+  color: white;
+}
+
+.font-cursive {
+  width: 100%;
+  height: 10%;
+  color: rgba(118, 90, 150, 255);
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+  margin-top: 7%;
+}
+
+.name {
+  width: 100%;
+  height: 15%;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+  font-size: 70px;
+  margin-top: -3%;
+}
+
+.lastname {
+  width: 100%;
+  height: 15%;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+  font-size: 70px;
+  margin-top: -5%;
+}
+
+.description {
+  width: 70%;
+  height: 20%;
+  color: rgba(119, 118, 125, 255);
+  font-family: "Baloo Tammudu 2", cursive;
+  line-height: 25px;
+  margin-top: 3%;
+}
+
+.btns {
+  width: 70%;
+  height: 7%;
+  margin-top: -5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btns div {
+  width: 45%;
+  height: 100%;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  color: white;
+  font-family: "Baloo Tammudu 2", cursive;
+}
+
+.btn-playlist {
+  background: linear-gradient(
+    to right,
+    rgba(206, 134, 240, 255),
+    rgba(180, 121, 243, 255)
+  );
+}
+
+.btn-playlist a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icon-right {
+  color: white;
+}
+
+.btn-iam {
+  border: rgba(99, 98, 103, 255) 1px solid;
+  background: rgba(30, 31, 37, 255);
+}
+
+.cont-media {
+  width: 85%;
+  height: 10%;
+  margin-top: 7%;
+}
+
+.cont-media ul {
+  list-style-type: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.cont-media li {
+  text-align: left;
+  display: inline;
+}
+
+.cont-media a {
+  text-decoration: none;
+  color: rgba(99, 98, 103, 255);
+  font-size: 25px;
 }
 
 .cont-pictures {
@@ -24,19 +184,18 @@
     rgba(239, 147, 208, 255),
     rgba(229, 183, 246, 255) 70%
   );
-  width: 47%;
-  height: 500px;
+  width: 50%;
+  height: 450px;
+  margin-left: -20%;
   border-radius: 0 10px 0 150px;
-  position: absolute;
-  left: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .group-pic {
   background: transparent;
   width: 80%;
-  height: 450px;
+  height: 95%;
   display: flex;
 }
 
@@ -46,15 +205,16 @@
     rgba(233, 169, 215, 255),
     rgba(239, 147, 208, 255)
   );
-  width: 60%;
+  width: 45%;
   height: 75%;
   border-radius: 150px;
   position: relative;
-  left: 12%;
+  left: 10%;
   margin-top: 7%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-start;
+  z-index: 1;
 }
 
 .cont-small {
@@ -62,20 +222,21 @@
     rgba(254, 131, 161, 255),
     rgba(229, 222, 250, 255)
   );
-  width: 75%;
+  width: 85%;
   height: 75%;
   margin-top: 10%;
+  margin-right: 5%;
   border-radius: 150px;
-  box-shadow: -80px 150px 100px rgba(155, 91, 152, 255);
+  box-shadow: -80px 120px 80px rgba(155, 91, 152, 255);
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  z-index: 2;
+  z-index: 3;
 }
 
 .photo1 {
   width: 87%;
-  height: 65%;
+  height: 60%;
   border-radius: 150px;
   align-self: flex-end;
   padding: 10px;
@@ -88,7 +249,7 @@
     rgba(246, 158, 206, 255),
     rgba(249, 229, 254, 255) 80%
   );
-  width: 60%;
+  width: 50%;
   height: 95%;
   border-radius: 0 0 150px 150px;
   position: relative;
@@ -107,8 +268,8 @@
   height: 60px;
   border-radius: 150px;
   position: absolute;
-  left: 63%;
-  top: 33%;
+  left: 56%;
+  top: 44%;
   box-shadow: 10px 10px 30px rgba(214, 179, 211, 255);
   z-index: 0;
 }
@@ -122,41 +283,44 @@
   height: 120px;
   border-radius: 150px;
   position: absolute;
-  left: 37%;
-  top: 50%;
-  box-shadow: -30px 120px 60px rgba(155, 91, 152, 255);
-  z-index: 0;
+  left: 45%;
+  top: 67%;
+  box-shadow: -30px 100px 60px rgba(155, 91, 152, 255);
+  z-index: 2;
 }
 
 .photo2 {
-  width: 77%;
-  height: 45%;
+  width: 70%;
+  height: 40%;
   border-radius: 150px;
   align-self: center;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
   z-index: 1;
 }
 
 .photov {
-  width: 63%;
-  height: 47%;
+  width: 65%;
+  height: 50%;
   border-radius: 0 0 150px 150px;
-  align-self: flex-start;
+  align-self: center;
   z-index: 3;
 }
 
 .scroll {
-  position: absolute;
-  left: 50%;
+  width: 15%;
+  height: 15%;
   font-size: 10px;
-  margin-top: 520px;
-  width: 100px;
   color: rgba(99, 98, 103, 255);
-  z-index: 5;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: flex-start;
-  flex-direction: row;
+  align-self: flex-end;
+}
+
+.scroll p {
+  margin-top: 5%;
+  width: 95%;
+  text-align: end;
 }
 
 .scroll hr {
@@ -164,143 +328,10 @@
   border: transparent;
   height: 60px;
   background: grey;
-  margin: 10px;
-  padding: 0;
   opacity: 0.1;
 }
 
-.text {
-  background: transparent;
-  margin-left: 150px;
-  margin-top: 20px;
-  position: absolute;
-  z-index: 4;
-}
-
-.blog {
-  color: white;
-  font-family: "Baloo Tammudu 2", cursive;
-  font-weight: 700;
-  display: flex;
-}
-
-.icon-blogger {
-  color: rgba(193, 131, 238, 255);
-}
-
-.icon-eq {
-  color: white;
-  margin: 9px 0 0 65%;
-}
-
-.font-cursive {
-  color: rgba(118, 90, 150, 255);
-  font-family: "Dancing Script", cursive;
-  font-size: 20px;
-  margin-top: 30px;
-}
-
-.name {
-  color: white;
-  font-size: 70px;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: bolder;
-  line-height: 20px;
-}
-
-.lastname {
-  color: white;
-  font-size: 70px;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: bolder;
-  line-height: 20px;
-}
-
-.description {
-  color: rgba(119, 118, 125, 255);
-  font-family: "Baloo Tammudu 2", cursive;
-  width: 400px;
-  line-height: 25px;
-}
-
-.btn-playlist {
-  background: linear-gradient(
-    to right,
-    rgba(206, 134, 240, 255),
-    rgba(180, 121, 243, 255)
-  );
-  color: white;
-  font-family: "Baloo Tammudu 2", cursive;
-  border-radius: 50px;
-  width: 180px;
-  height: 45px;
-  left: 30px;
-  text-align: center;
-  margin-top: 30px;
-  display: flex;
-}
-
-.icon-right {
-  color: white;
-  margin-left: 10px;
-}
-
-.btn-playlist a {
-  position: absolute;
-  text-decoration: none;
-  color: white;
-  font-size: 15px;
-}
-
-.btn-playlist p {
-  margin: 7px 0 0 45px;
-  text-align: center;
-}
-
-.btn-iam {
-  position: absolute;
-  left: 250px;
-  margin-top: -45px;
-  border-radius: 40px;
-  border: rgba(99, 98, 103, 255) 1px solid;
-  background: rgba(30, 31, 37, 255);
-  color: white;
-  width: 179px;
-  height: 44px;
-  text-align: center;
-  font-size: 15px;
-}
-
-.btn-iam p {
-  margin-top: 10px;
-}
-
-.cont-media {
-  margin-top: 70px;
-  background-color: transparent;
-  position: relative;
-  left: -80px;
-}
-
-.cont-media ul {
-  list-style-type: none;
-  text-align: left;
-}
-
-.cont-media li {
-  text-align: left;
-  padding-top: 10px;
-  display: inline;
-}
-
-.cont-media a {
-  text-decoration: none;
-  color: rgba(99, 98, 103, 255);
-  padding: 50px;
-  font-size: 25px;
-}
-
-.circle-back-big {
+.circle-back-small {
   background: radial-gradient(
     rgba(238, 232, 254, 255),
     rgba(215, 202, 252, 255)
@@ -310,11 +341,11 @@
   border-radius: 150px;
   position: absolute;
   margin-left: 85%;
-  margin-top: 730px;
+  margin-top: 800px;
   box-shadow: 10px 10px 30px rgba(228, 224, 230, 255);
 }
 
-.circle-back-small {
+.circle-back-big {
   background: radial-gradient(
     rgba(238, 232, 254, 255),
     rgba(215, 202, 252, 255)
@@ -324,21 +355,25 @@
   border-radius: 150px;
   position: absolute;
   left: -3%;
-  margin-top: 530px;
+  margin-top: 570px;
   box-shadow: -10px 10px 30px rgba(228, 224, 230, 255);
 }
 
 .projects {
+  width: 97%;
+  background-color: rgba(252, 248, 255, 255);
+  height: auto;
+  padding-top: 100px;
   display: flex;
-  margin-top: 750px;
-  text-align: center;
   flex-direction: column;
-  width: 100%;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .projects p:first-of-type {
+  width: 40%;
   color: rgba(30, 31, 37, 255);
   font-size: 30px;
   font-family: "Ubuntu", sans-serif;
@@ -349,38 +384,38 @@
   color: rgba(99, 97, 118, 255);
   font-size: 15px;
   font-family: "Baloo Tammudu 2", cursive;
-  width: 50%;
-  line-height: 17px;
+  width: 35%;
+  line-height: 25px;
   align-self: center;
-}
-
-.projects div p:first-of-type {
-  font-size: 25px;
-  text-align: left;
-}
-
-.projects div p:nth-of-type(2) {
-  text-align: left;
+  margin-top: 30px;
 }
 
 .div-projects {
-  width: 70%;
+  width: 60%;
   height: 300px;
   display: flex;
-  justify-content: center;
-  margin-top: 5%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
 }
 
 .p-projects {
-  width: 50%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.projects .p-projects p {
+  width: 100%;
+  text-align: start;
+  height: auto;
+}
+
 .img-projects {
   width: 50%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -388,504 +423,453 @@
 
 .div-projects a img:first-of-type {
   width: 100%;
-  height: 280px;
-  border-radius: 40px;
+  height: 70%;
   box-shadow: -15px -15px 40px rgba(234, 232, 235, 255);
-  margin: 0;
-  padding: 0;
+  border-radius: 20px;
 }
 
 .div-projects a img:nth-of-type(2) {
-  width: 7.5%;
-  height: 30%;
-  position: absolute;
-  margin-left: -13%;
-  margin-top: 11%;
+  width: 25%;
+  height: 60%;
+  margin-left: -20%;
+  margin-top: 30%;
   box-shadow: 5px 5px 40px rgba(234, 232, 235, 255);
+  border-radius: 10px;
+  z-index: 2;
 }
 
 .div-projects a img:nth-of-type(3) {
-  width: 7.5%;
-  height: 30%;
-  position: absolute;
-  margin-left: -7%;
-  margin-top: 3%;
+  width: 25%;
+  height: 60%;
+  margin-left: -40%;
+  margin-top: -30%;
   box-shadow: 5px 5px 40px rgba(234, 232, 235, 255);
+  border-radius: 10px;
 }
 
-.div-projects .img-projects a .cell-blog {
-  margin-left: -8%;
-}
-
-.div-projects .img-projects a .form {
-  border-radius: 0;
-}
-
-.div-projects .img-projects a .cell-form-01 {
-  margin-left: -10%;
-}
-
-.div-projects .img-projects a .calc-light {
-  width: 85%;
-}
-
-.div-projects .img-projects a .cell-calc-dark {
-  margin-left: -7%;
-  margin-top: -3%;
-}
-
-.final {
-  font-family: "Baloo Tammudu 2", cursive;
-  font-weight: 700;
-  width: 96%;
-  height: 100px;
-  margin-left: 2%;
+.gifs {
+  width: 90%;
+  height: 600px;
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-end;
+  margin-top: 40px;
+  background-color: rgba(30, 31, 37, 255);
+  border-radius: 0px 150px 0 0;
+  align-self: flex-start;
+  justify-content: space-around;
 }
 
-.cont-media-final ul {
-  list-style-type: none;
-  text-align: right;
+.gifs p:first-of-type {
+  color: white;
 }
 
-.cont-media-final li {
-  text-align: right;
-  padding-top: 10px;
-  display: inline;
+.gifs .p-projects {
+  width: 30%;
+  margin-left: 10%;
 }
 
-.cont-media-final a {
-  text-decoration: none;
-  color: rgb(49, 49, 56);
-  padding: 10px;
+.img-pages {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.img-pages a {
+  width: 65%;
+  height: 40%;
+}
+
+.img-pages a:last-of-type {
+  margin-left: 37%;
+}
+
+.img-pages a img:first-of-type {
+  width: 100%;
+  height: 90%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px black;
+}
+
+.img-pages a img:nth-of-type(2) {
+  width: 30%;
+  height: 80%;
+  border-radius: 10px;
+  z-index: 3;
+  margin-top: -50%;
+  margin-left: 85%;
+  box-shadow: 0px 0px 0px black;
+}
+
+.footer {
+  width: 60%;
+  height: 40px;
+  padding-top: 20px;
+  font-family: "Baloo Tammudu 2", cursive;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .cont-media {
+  width: 50%;
+  margin: 0;
+}
+
+.footer .cont-media ul {
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .cont-media a {
   font-size: 15px;
 }
 
 hr {
-  width: 80%;
-  color: rgba(99, 98, 103, 255);
-  opacity: 0.5;
+  width: 60%;
+  height: 1px;
+  background-color: rgb(189, 185, 185);
+  margin-top: 0;
+  padding: 0;
 }
 
-footer {
-  display: table;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (max-width: 1150px) {
-  .group-pic {
-    height: 430px;
+@media screen and (max-width: 1300px) {
+  .cont-main,
+  .projects {
+    width: 100%;
+    margin: 0;
   }
 
-  .circle-small {
-    top: 31%;
+  .cont-purple {
+    width: 70%;
+    border-radius: 0 0 150px 0;
+  }
+
+  .cont-pictures {
+    border-radius: 0 0 0 150px;
+    width: 60%;
+  }
+
+  .text {
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  .blog,
+  .cont-media {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .group-pic {
+    width: 90%;
+  }
+
+  .text {
+    margin-left: 5%;
   }
 }
 
 @media screen and (max-width: 1100px) {
   .group-pic {
-    height: 400px;
-  }
-
-  .circle-small {
-    top: 29%;
-  }
-
-  .circle-big {
-    left: 37%;
-    top: 48%;
-  }
-}
-
-@media screen and (max-width: 1060px) {
-  .cont-pictures {
-    width: 56%;
-    left: 40%;
-  }
-
-  .group-pic {
-    width: 80%;
-  }
-
-  .scroll {
-    left: 60%;
-  }
-
-  .text {
-    margin-left: 60px;
-  }
-
-  .icon-eq {
-    margin: 9px 0 0 45%;
+    width: 100%;
   }
 
   .name,
   .lastname {
-    font-size: 50px;
+    font-size: 65px;
   }
 
-  .circle-back-big {
-    display: none !important;
-  }
-
-  .circle-back-small {
-    display: none !important;
+  .scroll {
+    display: none;
   }
 }
 
-@media screen and (max-width: 980px) {
-  .group-pic {
-    height: 370px;
+@media screen and (max-width: 1000px) {
+  .name,
+  .lastname {
+    font-size: 58px;
   }
 
-  .circle-small {
-    top: 25%;
+  .gifs .p-projects {
+    width: 25%;
+    margin-left: 5%;
   }
 
-  .circle-big {
-    left: 38%;
-    top: 43%;
-  }
-
-  .div-projects{
-    width: 90%;
-  }
-
-  .div-projects a img:nth-of-type(2){
-    width: 10%;
-    margin-left: -16%;
-  }
-
-  .div-projects .img-projects a .cell-blog{
-    margin-left: -9%;
-  }
-
-  .div-projects a img:nth-of-type(3){
-    width: 10%;
+  .img-pages {
+    width: 60%;
   }
 }
 
-@media screen and (max-width: 840px) {
-  .cont-pictures {
-    height: 450px;
-  }
-
-  .group-pic {
-    height: 320px;
-  }
-
-  .circle-big {
-    left: 37%;
-    top: 38%;
-  }
-
-  .btn-playlist a {
-    font-size: 20px;
-  }
-
-  .btn-iam {
-    position: absolute;
-    margin: 30px 0 0 -250px;
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-  }
-
-  .cont-media {
-    margin: 130px 0 0 0px;
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .cont-media a {
-    padding: 20px;
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  .group-pic {
-    height: 300px;
-  }
-
-  .circle-small {
-    top: 23%;
-  }
-
-  .circle-big {
-    left: 37%;
-    top: 35%;
-  }
-
-  .div-projects a img:first-of-type{
-    height: 200px;
-  }
-
-  .div-projects a img:nth-of-type(2){
-    height: 20%;
-  }
-
-  .div-projects a img:nth-of-type(3){
-    height: 20%;
-  }
-}
-
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 900px) {
   .cont-main {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
   }
 
   .cont-purple {
     width: 100%;
     border-radius: 0;
-    position: static;
-  }
-
-  .cont-pictures {
-    width: 100%;
-    height: 500px;
-    border-radius: 0;
-    position: static;
-  }
-
-  .group-pic {
-    width: 80%;
-    height: 470px;
-  }
-
-  .circle-small {
-    display: none;
-  }
-
-  .circle-big {
-    display: none;
+    height: 700px;
   }
 
   .text {
-    margin: -1140px 0 0 12%;
-    padding: 0;
-    position: relative;
-  }
-
-  .blog {
-    font-size: 15px;
-  }
-
-  .icon-eq {
-    margin-left: 60%;
-  }
-
-  .font-cursive {
-    line-height: 2px;
-    font-size: 15px;
-  }
-
-  .description {
-    font-size: 15px;
-    width: 80%;
+    width: 90%;
+    margin-left: 10%;
   }
 
   .name,
   .lastname {
-    font-size: 40px;
+    font-size: 75px;
   }
 
-  .btn-playlist {
-    width: 200px;
-    height: 50px;
-  }
-
-  .btn-playlist a {
-    font-size: 20px;
-  }
-
-  .btn-iam {
-    position: absolute;
-    margin: 30px 0 0 -250px;
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-  }
-
+  .blog,
   .cont-media {
-    margin: 130px 0 0 0;
-    display: flex;
-    justify-content: space-evenly;
+    width: 90%;
   }
 
-  .cont-media a {
-    padding: 18px;
-    font-size: 20px;
+  .cont-pictures {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0;
+    height: 700px;
+  }
+
+  .group-pic {
+    width: 80%;
+  }
+
+  .circle-small {
+    width: 70px;
+    height: 70px;
+  }
+
+  .circle-big {
+    width: 150px;
+    height: 150px;
+  }
+
+  .circle-back-big {
+    margin-top: 1350px;
+  }
+
+  .circle-back-small {
+    margin-top: 1650px;
+    margin-left: 75%;
+  }
+
+  .div-projects {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .group-pic {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .group-pic {
+    width: 100%;
+  }
+
+  .name,
+  .lastname {
+    font-size: 65px;
+  }
+
+  .btns {
+    width: 90%;
+  }
+
+  .circle-back-big,
+  .circle-back-small {
+    display: none;
   }
 
   .projects {
-    width: 100%;
-    margin-top: 650px;
-  }
-
-  .projects_title {
-    font-size: 20px;
+    padding-top: 60px;
   }
 
   .projects p:first-of-type {
+    width: 70%;
     font-size: 20px;
   }
 
   .projects p:nth-of-type(2) {
-    font-size: 12px;
-  }
-
-  .scroll {
-    display: none !important;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .cont-pictures {
-    height: 390px;
-  }
-
-  .group-pic {
-    height: 360px;
-  }
-
-  .text {
-    margin-top: -980px;
-  }
-
-  .projects{
-    margin-top: 500px;
-  }
-
-  .projects div p:nth-of-type(2){
-    width: 80%;
-  }
-
-  .div-projects{
-    height: 250px;
-  }
-  .p-projects{
     width: 65%;
+    font-size: 13px;
   }
 
-  .img-projects{
-    width: 35%;
-  }
-
-  .div-projects a img:first-of-type{
-    height: 150px;
+  .gifs {
+    flex-direction: column;
     border-radius: 0;
+    width: 100%;
+    justify-content: flex-start;
   }
 
-  .div-projects a img:nth-of-type(2){
-    height: 15%;
+  .gifs .p-projects {
+    width: 100%;
+    height: 50%;
+    margin: 0;
   }
 
-  .div-projects a img:nth-of-type(3){
-    height: 15%;
+  .img-pages {
+    width: 100%;
+    height: 50%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .img-pages a {
+    width: 45%;
+    height: 80%;
+  }
+
+  .img-pages a:last-of-type {
+    margin: -20% 0 0 0;
+  }
+
+  .img-pages a img:nth-of-type(2) {
+    display: none;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 600px) {
   .cont-pictures {
-    height: 330px;
+    height: 550px;
   }
 
   .group-pic {
-    height: 280px;
+    width: 100%;
+  }
+
+  .name,
+  .lastname {
+    font-size: 55px;
+  }
+
+  .div-projects {
+    justify-content: center;
+  }
+
+  .p-projects p:nth-of-type(2) {
+    width: 90%;
+  }
+
+  .p-projects {
+    width: 70%;
+  }
+
+  .img-projects {
+    width: 30%;
+  }
+
+  .img-pages {
+    width: 60%;
+  }
+
+  .img-pages a img:nth-of-type(2) {
+    display: block;
+  }
+
+  .div-projects a img:first-of-type {
+    display: none;
+  }
+
+  .div-projects a img:nth-of-type(2) {
+    width: 95%;
+    height: 100%;
+    margin: 0 2% 0 2%;
+  }
+
+  .div-projects a img:nth-of-type(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cont-pictures {
+    height: 400px;
+  }
+
+  .name,
+  .lastname {
+    font-size: 45px;
+  }
+
+  .lastname {
+    margin-top: -10%;
   }
 
   .font-cursive {
-    line-height: 15px;
+    margin-top: 20%;
+  }
+
+  .circle-small {
+    width: 50px;
+    height: 50px;
+  }
+
+  .circle-big {
+    width: 100px;
+    height: 100px;
+  }
+
+  .div-projects {
+    width: 100%;
+  }
+
+  .p-projects {
+    width: 55%;
+  }
+
+  .img-projects {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cont-pictures {
+    height: 350px;
+  }
+
+  .name,
+  .lastname {
+    font-size: 34px;
+  }
+
+  .lastname {
+    margin-top: -20%;
+  }
+
+  .btns div {
+    font-size: 12px;
+  }
+
+  .img-pages {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .cont-pictures {
+    height: 300px;
   }
 
   .name,
   .lastname {
     font-size: 30px;
-    top: 50px;
-    line-height: 40px;
   }
 
-  .btn-iam,
-  .btn-playlist {
-    width: 150px;
-    height: 40px;
-    font-size: 15px;
+  .lastname {
+    margin-top: -25%;
   }
 
-  .btn-playlist a {
-    font-size: 15px;
-  }
-
-  .cont-media {
-    margin: 100px 0 0 0;
-  }
-
-  .cont-media a {
-    padding: 7px;
-    font-size: 20px;
-  }
-
-  .projects {
-    margin-top: 500px;
-  }
-
-  .projects div p:first-of-type{
-    font-size: 18px;
-  }
-
-  .div-projects{
-    margin-top: 30px;
-  }
-
-  .div-projects a img:first-of-type{
-    display: none;
-
-  }
-
-  .div-projects a img:nth-of-type(2){
-    margin: 0;
-    width: 85%;
-    height: 230px;
-    position: relative;
-  }
-
-
-}
-
-@media screen and (max-width: 300px) {
-  .cont-pictures {
-    height: 260px;
-  }
-
-  .group-pic {
-    height: 200px;
-  }
-
-  .text {
-    margin-top: -900px;
-  }
-
-
-  .final{
-    font-size: 8px;
-  }
-
-  .cont-media-final a {
-    font-size: 8px;
-    padding: 5px;
-  }
-
-  .projects{
-    margin-top: 300px;
+  .btns div {
+    font-size: 10px;
   }
 }
